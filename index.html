@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,"><meta name="theme-color" content="#214f42"><title>Sale & Event Kit | SimpleConsign preview</title>
+  <style>:root{--ink:#202b27;--muted:#69746d;--green:#214f42;--line:#dde2da;--cream:#f6f5f0;--soft:#edf1eb;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button,label,input,select,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}button:focus-visible,a:focus-visible,summary:focus-visible,label:focus-visible{outline:3px solid #7caa97;outline-offset:4px}input:focus,select:focus,textarea:focus{outline:2px solid #719786;outline-offset:1px}button{transition:background .15s,color .15s}button:hover{filter:brightness(.96)}[hidden]{display:none!important}.site-header{height:84px;padding:0 4.5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fafbf7}.brand{display:flex;align-items:center;gap:12px;font-size:20px;font-weight:650;letter-spacing:-.7px}.brand-icon{background:var(--green);color:#fff;width:36px;height:38px;border-radius:9px;display:grid;place-items:center}.brand-icon svg{width:25px;height:25px}.brand-divider{font-weight:300;color:#a7afa5;padding:0 12px}.toolkit-brand{font-size:14px;letter-spacing:0;font-weight:450;color:#657168}.header-actions{display:flex;align-items:center;gap:24px}.prototype-tag{font-size:11px;border:1px solid #cbd8c8;border-radius:20px;padding:6px 10px;color:#506c57;letter-spacing:.3px}.text-button,.quiet-link{border:0;background:none;color:var(--green);font-size:12px;font-weight:650;padding:6px 0}.text-button{font-size:13px}.text-button span{margin-left:6px}main{max-width:1390px;padding:0 5%;margin:auto}.intro{display:flex;justify-content:space-between;align-items:flex-end;padding:49px 0 36px}.eyebrow{font-size:10px;letter-spacing:1.8px;font-weight:700;color:var(--green);margin:0 0 18px}h1{font-family:Georgia,"Times New Roman",serif;font-size:51px;line-height:1.05;font-weight:400;letter-spacing:-1.8px;margin:0 0 17px}h1 span{color:var(--green)}.intro-text{font-size:14px;line-height:1.65;color:var(--muted);margin:0}.intro-aside{margin:0 0 6px 30px;text-align:right}.free-label{font-size:13px;font-weight:600}.free-label span{font-size:25px;color:#9a793d;vertical-align:middle;margin-right:6px}.intro-aside p{font-size:12px;color:var(--muted);margin:8px 0 21px}.workspace-heading{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:19px 0}.journey{display:flex;gap:17px;align-items:center;font-size:11px;color:#5c6960}.journey b{font-weight:600;background:#e3eadf;display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;margin-right:6px;font-size:10px;color:var(--green)}.journey i{font-style:normal;color:#b3bdb0}.save-status{font-size:10px;color:var(--muted)}.workspace{display:grid;grid-template-columns:335px minmax(0,1fr);align-items:start;gap:28px}.editor{background:#fff;border:1px solid var(--line);border-radius:13px;overflow:hidden}.form-section{border-bottom:1px solid var(--line)}summary{list-style:none;cursor:pointer;padding:20px;display:flex;align-items:center;justify-content:space-between;font-weight:600;font-size:14px}summary::-webkit-details-marker{display:none}summary small{font-size:10px;color:#9daba0;margin-right:11px;letter-spacing:1px}.chevron{color:#6d7c72;transform:rotate(-90deg)}details[open] .chevron{transform:none}.section-body{padding:0 20px 22px}label{display:block;font-size:11px;font-weight:650;margin:17px 0 8px}label:first-child{margin-top:0}label>span{color:#748178}.optional{font-size:10px;font-weight:400;float:right}input:not([type=color]):not([type=file]),select,textarea{border:1px solid #d7ded5;border-radius:6px;padding:10px 11px;background:#fff;color:var(--ink);width:100%;min-width:0;font-size:12px;line-height:1.45}input[type=date],input[type=time]{padding:9px 7px!important;font-size:11px!important;min-height:39px}textarea{resize:vertical;min-height:70px}select{height:40px}.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}.two-cols label{margin-top:17px;font-size:10px}.field-note{font-size:10px;color:var(--muted);line-height:1.5;margin:7px 0 0}.logo-upload{display:flex;align-items:center;gap:13px;border:1px dashed #cdd7ca;border-radius:7px;padding:12px;margin-top:17px;background:#fafbf8}.logo-preview{width:48px;height:48px;border:1px solid #d7dfd4;border-radius:5px;background:white;display:grid;place-items:center;color:var(--green);font-family:Georgia,serif;flex-shrink:0;font-size:21px;overflow:hidden}.logo-preview img{width:100%;height:100%;object-fit:contain}.upload-label{cursor:pointer;margin:0;color:var(--green);font-size:11px}.logo-upload p{font-size:9px;color:var(--muted);margin:5px 0 0}.logo-upload .quiet-link{font-size:10px}.style-options{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.style-options button{background:#fff;border:1px solid #d9dfd6;border-radius:7px;display:flex;flex-direction:column;align-items:center;gap:8px;padding:11px 3px;font-size:10px;color:#657168}.style-options button[aria-pressed=true]{border-color:var(--green);background:#edf2eb;color:var(--green);box-shadow:inset 0 0 0 1px var(--green)}.style-sample{font-size:26px;height:29px}.serif{font-family:Georgia,serif}.heavy{font-weight:900;letter-spacing:-2px}.light{font-weight:300}.colors{display:flex;align-items:center;gap:9px}.swatch{background:var(--swatch);width:24px;height:24px;border:2px solid white;border-radius:50%;outline:1px solid #d6ded2;padding:0}.swatch[aria-pressed=true]{outline:2px solid var(--green);outline-offset:2px}.colors input{width:27px;height:27px;padding:0;border:0;background:none;cursor:pointer}.colors>span{font-size:10px;color:var(--muted);margin-left:auto}.project-tools{padding:16px 20px 0;display:flex;justify-content:space-between;gap:10px}.project-tools .quiet-link{font-size:10px;white-space:nowrap}.file-label{margin:0;cursor:pointer;display:inline-block}.local-note{font-size:10px;color:var(--muted);line-height:1.5;margin:7px 20px 19px}.preview-panel{background:#fff;border:1px solid var(--line);border-radius:13px;overflow:hidden;position:sticky;top:18px}.preview-top{padding:25px 27px 19px;display:flex;align-items:center;justify-content:space-between;gap:15px}.preview-top .eyebrow{font-size:9px;letter-spacing:1.4px;margin-bottom:7px}h2{font-size:20px;letter-spacing:-.5px;margin:0;font-weight:550}.live-indicator{font-size:10px;color:#6f7c72;white-space:nowrap}.live-indicator i{display:inline-block;width:5px;height:5px;background:#5a9071;border-radius:50%;margin-right:5px}.asset-tabs{display:flex;border-bottom:1px solid var(--line);padding:0 25px;gap:20px;overflow:auto}.asset-tabs button{background:none;border:0;border-bottom:2px solid transparent;padding:12px 0 13px;white-space:nowrap;font-size:11px;color:var(--muted)}.asset-tabs button[aria-selected=true]{color:var(--green);font-weight:650;border-bottom-color:var(--green)}.preview-stage{background:#e9ece5;background-image:radial-gradient(#bec9bc65 .65px,transparent .65px);background-size:13px 13px;min-height:470px;max-height:650px;height:55vw;display:flex;align-items:center;justify-content:center;padding:26px 40px;overflow:hidden}.paper-wrap{height:100%;max-height:540px;max-width:100%;display:flex;align-items:center;justify-content:center;position:relative}.paper-wrap img{display:block;max-width:100%;height:100%;object-fit:contain;box-shadow:0 12px 28px #28372924}#previewPlaceholder{position:absolute;font-size:13px;color:var(--muted)}.asset-meta{display:flex;align-items:center;justify-content:space-between;padding:13px 25px;border-bottom:1px solid var(--line);gap:10px}.asset-meta>span{font-size:10px;color:var(--muted)}.asset-meta button{font-size:11px}.download-area{padding:23px 25px 19px;background:#fafbf7}.kit-contents{display:flex;align-items:center;gap:13px;margin-bottom:18px}.file-stack{font-size:31px;line-height:1;color:#63816a}.kit-contents strong{font-size:12px;font-weight:650}.kit-contents p{font-size:10px;color:var(--muted);margin:6px 0 0;line-height:1.6}.primary-button{background:var(--green);color:white;border:0;border-radius:7px;min-height:46px;width:100%;font-size:13px;font-weight:600;padding:12px 18px;display:flex;align-items:center;justify-content:center;gap:14px}.primary-button>span{font-size:19px;font-weight:400}.download-note{font-size:10px;text-align:center;color:var(--muted);margin:11px 0 0;line-height:1.5}#copyPanel{padding:24px;max-height:620px;overflow:auto}.copy-intro p{font-size:14px;margin:0 0 5px;font-weight:600}.copy-intro>span{font-size:11px;color:var(--muted)}.copy-block{margin-top:23px}.copy-block>div{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.copy-block label{margin:0}.copy-block textarea{font-size:12px;line-height:1.65}.copy-block button{font-size:10px}.notice{margin-top:15px;font-size:11px;line-height:1.6;background:#f8edd8;border:1px solid #e8d8b7;padding:12px;border-radius:6px}.notice>div{display:flex;gap:15px;flex-wrap:wrap}.notice button{font-size:10px}footer{margin:34px 0 22px;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;font-size:10px;color:var(--muted);line-height:1.7}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;padding:13px 20px;border-radius:8px;box-shadow:0 5px 25px #0002;z-index:30;max-width:90vw;font-size:12px;line-height:1.5}.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}dialog{border:1px solid var(--line);border-radius:15px;max-width:580px;width:calc(100% - 32px);padding:28px 35px;color:var(--ink);box-shadow:0 18px 80px #14251c33;max-height:90vh;overflow:auto}dialog::backdrop{background:#1b2b244d;backdrop-filter:blur(3px)}.dialog-head{display:flex;align-items:center;justify-content:space-between}.dialog-head .eyebrow{margin:0}.icon-button{border:0;background:none;font-size:29px;color:var(--muted);height:36px;width:36px}dialog h2{font-family:Georgia,serif;font-weight:400;font-size:34px;line-height:1.15;margin:15px 0 26px}.how-steps{padding-left:21px;display:grid;gap:13px}.how-steps li{padding-left:6px;font-size:13px}.how-steps p{font-size:12px;line-height:1.6;color:var(--muted);margin:6px 0}.explanation-box{background:var(--soft);padding:18px;border-radius:8px;margin-top:24px;font-size:12px;line-height:1.65}.explanation-box p{margin:7px 0 0;color:#59695c}.dialog-footnote{font-size:11px;line-height:1.6;color:var(--muted);margin:19px 0 0}@media(min-width:1400px){.preview-stage{height:560px}}@media(max-width:1050px){main{padding:0 3%}.workspace{grid-template-columns:300px minmax(0,1fr);gap:18px}.preview-stage{padding:25px;height:560px}.intro h1{font-size:45px}.toolkit-brand,.brand-divider{display:none}.live-indicator{display:none}.asset-tabs{gap:17px;padding:0 19px}.preview-top{padding:23px 20px 18px}.preview-top h2{font-size:18px}.asset-meta{padding:12px 18px;flex-wrap:wrap}.download-area{padding:20px}.section-body{padding-left:16px;padding-right:16px}}@media(max-width:760px){.site-header{height:70px;padding:0 5%}.brand{font-size:18px}.brand-icon{width:31px;height:33px}.prototype-tag{display:none}.header-actions{gap:8px}.header-actions button{font-size:11px}main{padding:0 5%}.intro{padding:32px 0 25px;display:block}.intro h1{font-size:43px}.intro .eyebrow{font-size:8px;letter-spacing:1.5px}.intro-aside{display:none}.intro-text{font-size:13px}.desktop-break{display:none}.workspace-heading{align-items:flex-start;gap:12px}.journey{gap:7px;font-size:9px;flex-wrap:wrap}.journey b{margin-right:3px;width:17px;height:17px;font-size:9px}.journey i{display:none}.save-status{font-size:9px;max-width:82px;text-align:right;line-height:1.5}.workspace{grid-template-columns:1fr;gap:20px}.preview-panel{position:static}.preview-stage{min-height:320px;height:120vw;max-height:610px;padding:23px}.editor{order:0}.preview-panel{order:1}.section-body{padding:0 19px 20px}.asset-tabs{gap:23px}.preview-top h2{font-size:19px}.copy-block textarea{font-size:14px}input:not([type=color]):not([type=file]),select,textarea{font-size:16px}.two-cols label{font-size:11px}input[type=date],input[type=time]{font-size:14px!important;min-height:42px}footer{flex-direction:column;gap:8px}.text-button,.quiet-link{min-height:32px}.project-tools{padding-top:10px}.swatch{width:29px;height:29px}.asset-meta>span{font-size:9px}.kit-contents p{font-size:10px}dialog{padding:22px}dialog h2{font-size:30px}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.mobile-preview-link{display:none}.logo-upload:focus-within{outline:2px solid #719786;outline-offset:2px}#preview-panel{scroll-margin-top:18px}@media(max-width:760px){.mobile-preview-link{display:block;text-align:right;font-size:12px;color:var(--green);margin:0 0 16px;text-underline-offset:4px;min-height:28px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="brand"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10v10h16V10M3 9l2-6h14l2 6M3 9c0 3 4 3 4 0 0 3 5 3 5 0 0 3 5 3 5 0 0 3 4 3 4 0M9 20v-6h6v6"/></svg></span><span>SimpleConsign<span class="brand-divider"> / </span><span class="toolkit-brand">Retail Toolkit</span></span></div><div class="header-actions"><span class="prototype-tag">Working preview</span><button class="text-button" id="howButton">How it works <span aria-hidden="true">↗</span></button></div></header>
+<main>
+<section class="intro"><div><p class="eyebrow">A LITTLE LESS PREP. A LITTLE MORE POSSIBILITY.</p><h1>Your next event,<br><span>ready to share.</span></h1><p class="intro-text">One set of details. A matching kit of signs, social graphics,<br class="desktop-break"> announcements, and a plan for your team.</p></div><div class="intro-aside"><div class="free-label"><span aria-hidden="true">✦</span> A free tool for your store</div><p>Vendor malls · Consignment · Resale</p><button class="quiet-link" id="sampleButton">Load sample event <span aria-hidden="true">↗</span></button></div></section>
+<div class="workspace-heading"><div class="journey"><span><b>1</b> Add your details</span><i aria-hidden="true">/</i><span><b>2</b> Make it yours</span><i aria-hidden="true">/</i><span><b>3</b> Download & share</span></div><span id="saveStatus" class="save-status" role="status">Sample event</span></div>
+<a class="mobile-preview-link" href="#preview-panel">See your kit preview ↓</a><div class="workspace">
+<aside class="editor"><form id="eventForm">
+<details open class="form-section"><summary><span><small>01</small> Your store</span><span class="chevron" aria-hidden="true">⌄</span></summary><div class="section-body">
+<label for="businessType">Business type</label><select id="businessType" name="businessType"><option value="vendor">Vendor mall</option><option value="consignment">Consignment shop</option><option value="resale">Resale shop</option><option value="mixed">A mix of these</option></select>
+<label for="storeName">Store name <span>*</span></label><input id="storeName" name="storeName" maxlength="60" required autocomplete="organization">
+<div class="logo-upload"><div id="logoPreview" class="logo-preview" aria-hidden="true">JM</div><div><label for="logoFile" class="upload-label">Add your logo <span aria-hidden="true">↗</span></label><input id="logoFile" type="file" accept="image/png,image/jpeg,image/webp" class="visually-hidden"><p>PNG, JPG or WebP · up to 5 MB</p><button type="button" id="removeLogo" class="quiet-link" hidden>Remove logo</button></div></div>
+</div></details>
+<details open class="form-section"><summary><span><small>02</small> The event</span><span class="chevron" aria-hidden="true">⌄</span></summary><div class="section-body">
+<label for="eventName">Event name <span>*</span></label><input id="eventName" name="eventName" maxlength="64" required>
+<div class="two-cols"><div><label for="eventDate">Start date <span>*</span></label><input id="eventDate" name="eventDate" type="date" required></div><div><label for="endDate">End date <span class="optional">optional</span></label><input id="endDate" name="endDate" type="date"></div></div>
+<div class="two-cols"><div><label for="startTime">Opens <span>*</span></label><input id="startTime" name="startTime" type="time" required></div><div><label for="endTime">Closes <span>*</span></label><input id="endTime" name="endTime" type="time" required></div></div><p class="field-note">Use your store's local time. For multiple dates, these hours apply each day.</p>
+<label for="location">Event address <span>*</span></label><input id="location" name="location" maxlength="120" required>
+<label for="offer">Offer or short highlight <span class="optional">optional</span></label><input id="offer" name="offer" maxlength="100" placeholder="For example, 20% off selected finds">
+<label for="details">What should shoppers know?</label><textarea id="details" name="details" rows="3" maxlength="240"></textarea>
+<label for="url">Website or event link <span class="optional">optional</span></label><input id="url" name="url" maxlength="140" placeholder="https://yourstore.com/event" inputmode="url">
+<label for="terms">Offer terms & exclusions <span class="optional">optional</span></label><textarea id="terms" name="terms" rows="3" maxlength="220"></textarea><p class="field-note" id="termsHint">Use only offers approved by participating vendors.</p>
+<div id="participantsGroup"><label for="participants">Participating booths <span class="optional">optional</span></label><textarea id="participants" name="participants" rows="3" maxlength="500" placeholder="Booth 12: 20% off decor&#10;Booth 28: 15% off selected items"></textarea><p class="field-note">Included in announcement copy and team instructions.</p></div>
+</div></details>
+<details open class="form-section"><summary><span><small>03</small> Make it yours</span><span class="chevron" aria-hidden="true">⌄</span></summary><div class="section-body"><label>Design style</label><div class="style-options" aria-label="Design style"><button type="button" data-style="editorial" aria-pressed="true"><span class="style-sample serif">Aa</span>Editorial</button><button type="button" data-style="bold" aria-pressed="false"><span class="style-sample heavy">Aa</span>Bold</button><button type="button" data-style="minimal" aria-pressed="false"><span class="style-sample light">Aa</span>Minimal</button></div><label for="accent">Accent color</label><div class="colors"><button type="button" class="swatch" data-color="#214f42" style="--swatch:#214f42" aria-label="Forest green"></button><button type="button" class="swatch" data-color="#854333" style="--swatch:#854333" aria-label="Terracotta"></button><button type="button" class="swatch" data-color="#304766" style="--swatch:#304766" aria-label="Slate blue"></button><button type="button" class="swatch" data-color="#663e5d" style="--swatch:#663e5d" aria-label="Plum"></button><input id="accent" name="accent" type="color" aria-label="Custom accent color"><span id="colorLabel">#214F42</span></div></div></details>
+</form><div class="project-tools"><button id="saveProject" class="quiet-link">Save editable project</button><label for="projectFile" class="quiet-link file-label" tabindex="0">Open project</label><input id="projectFile" type="file" accept="application/json,.json" class="visually-hidden"></div><p class="local-note">Saved on this browser when available. Save a project file to keep a backup or move to another device.</p></aside>
+<section id="preview-panel" class="preview-panel" aria-label="Event kit preview"><div class="preview-top"><div><p class="eyebrow">YOUR EVENT KIT</p><h2>A good-looking head start.</h2></div><span class="live-indicator"><i></i> Live preview</span></div>
+<div class="asset-tabs" role="tablist" aria-label="Preview asset"><button id="tab-poster" role="tab" aria-selected="true" aria-controls="graphicPanel" data-tab="poster">Flyer</button><button id="tab-square" role="tab" aria-selected="false" aria-controls="graphicPanel" data-tab="square">Social post</button><button id="tab-story" role="tab" aria-selected="false" aria-controls="graphicPanel" data-tab="story">Story</button><button id="tab-copy" role="tab" aria-selected="false" aria-controls="copyPanel" data-tab="copy">Copy & team</button></div>
+<div id="graphicPanel" role="tabpanel" aria-labelledby="tab-poster"><div class="preview-stage"><div class="paper-wrap"><img id="assetPreview" alt="Generated event flyer preview"><div id="previewPlaceholder">Preparing your preview…</div></div></div><div class="asset-meta"><span id="assetDimensions">US Letter · 8.5 × 11 in · 300 dpi</span><button id="downloadAsset" class="text-button">Download flyer PDF <span aria-hidden="true">↓</span></button></div></div>
+<div id="copyPanel" role="tabpanel" aria-labelledby="tab-copy" hidden><div class="copy-intro"><p>Ready to use. Yours to edit.</p><span>Review dates, offers, and exclusions before sharing.</span></div><div id="copyStale" class="notice" hidden>Event details have changed. Update the copy or confirm your edited version.<div><button id="refreshCopy" class="quiet-link">Update from event details</button><button id="keepCopy" class="quiet-link">Keep my edited text</button></div></div><div class="copy-block"><div><label for="socialCopy">Social caption</label><button data-copy="social" class="quiet-link">Copy text</button></div><textarea id="socialCopy" rows="8"></textarea></div><div class="copy-block"><div><label for="emailCopy">Email announcement</label><button data-copy="email" class="quiet-link">Copy text</button></div><textarea id="emailCopy" rows="10"></textarea></div><div class="copy-block"><div><label for="staffCopy">Team checklist</label><button data-copy="staff" class="quiet-link">Copy text</button></div><textarea id="staffCopy" rows="12"></textarea></div></div>
+<div class="download-area"><div class="kit-contents"><span class="file-stack" aria-hidden="true">▤</span><div><strong>Everything, in one tidy download.</strong><p>Print flyer · 2 social graphics · Announcements · Team checklist</p></div></div><button id="downloadKit" class="primary-button">Download full kit <span aria-hidden="true">↓</span></button><p class="download-note">A ZIP file with your assets and editable project. Free to use.</p></div>
+</section></div>
+<footer><span>Made for the stores that make shopping personal.</span><span>Prototype with fictional sample details. No signup or messages are sent.</span></footer>
+</main>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="howDialog"><div class="dialog-head"><span class="eyebrow">BEHIND THE KIT</span><button id="closeHow" class="icon-button" aria-label="Close explanation">×</button></div><h2>Your details become<br>a ready-to-use kit.</h2><ol class="how-steps"><li><b>Start with a designed template.</b><p>Your logo, colors, dates, and event details fill layouts sized for print and social.</p></li><li><b>Review the writing.</b><p>Prepared writing templates organize what you enter. You can edit the announcement and team checklist before downloading.</p></li><li><b>Download one ZIP file.</b><p>Unzip it to get a print PDF, PNG images, text files, a printable team guide, and your editable project.</p></li></ol><div class="explanation-box"><strong>No Canva, Adobe, or AI connection is needed here.</strong><p>This preview creates the files in your browser. Images are finished graphics; make changes in the builder and download again. The print PDF is for ordinary office printing, with no commercial bleed or CMYK setup.</p></div><p class="dialog-footnote">A launched version could add an email signup and CRM connection. This preview does not collect leads or send anything to a service.</p></dialog>
+<script>/* Local, dependency-free artwork, document, and archive generation. */
+(function () {
+  'use strict';
+
+  const encoder = new TextEncoder();
+  const dimensions = { poster: [2550, 3300], square: [1080, 1080], story: [1080, 1920] };
+  const sans = '-apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif';
+  const serif = 'Georgia, "Times New Roman", serif';
+  const clean = value => String(value == null ? '' : value).trim();
+  const escapeHtml = value => String(value == null ? '' : value).replace(/[&<>"']/g, character => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
+  const asState = input => Object.fromEntries(Object.entries(input || {}).map(([key, value]) => [key, typeof value === 'string' ? value.trim() : value]));
+  const validAccent = value => /^#[0-9a-f]{6}$/i.test(clean(value)) ? value : '#174C40';
+
+  function datePart(value) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(clean(value))) return '';
+    const [year, month, day] = value.split('-').map(Number);
+    const date = new Date(year, month - 1, day, 12);
+    if (date.getFullYear() !== year || date.getMonth() !== month - 1 || date.getDate() !== day) return '';
+    return new Intl.DateTimeFormat('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }).format(date);
+  }
+
+  function timePart(value) {
+    if (!/^\d{2}:\d{2}$/.test(clean(value))) return '';
+    const [hours, minutes] = value.split(':').map(Number);
+    if (hours > 23 || minutes > 59) return '';
+    return `${hours % 12 || 12}${minutes ? `:${String(minutes).padStart(2, '0')}` : ''} ${hours < 12 ? 'AM' : 'PM'}`;
+  }
+
+  function dateRange(state) {
+    const start = datePart(state.eventDate);
+    const end = datePart(state.endDate);
+    return start && end && state.endDate !== state.eventDate ? `${start} to ${end}` : start || end;
+  }
+
+  function timeRange(state) {
+    const start = timePart(state.startTime);
+    const end = timePart(state.endTime);
+    return start && end ? `${start} to ${end}` : start ? `Starts at ${start}` : end ? `Ends at ${end}` : '';
+  }
+
+  function dateLabel(input) {
+    const state = asState(input);
+    return [dateRange(state), timeRange(state)].filter(Boolean).join(' · ');
+  }
+
+  function participantLabel(state) {
+    if (!['vendor', 'mixed'].includes(state.businessType) || !clean(state.participants)) return '';
+    return clean(state.url) ? 'See event details for participating booths.' : 'Ask in store about participating booths.';
+  }
+
+  function textFont(context, size, family = sans, weight = '400') {
+    context.font = `${weight} ${size}px ${family}`;
+  }
+
+  // Wrap words and long URLs without ellipses or silently dropped text.
+  function linesFor(context, text, width) {
+    const lines = [];
+    for (const paragraph of String(text).split(/\r?\n/)) {
+      if (!paragraph.trim()) { lines.push(''); continue; }
+      let line = '';
+      for (const word of paragraph.trim().split(/\s+/)) {
+        const candidate = line ? `${line} ${word}` : word;
+        if (context.measureText(candidate).width <= width) { line = candidate; continue; }
+        if (line) { lines.push(line); line = ''; }
+        if (context.measureText(word).width <= width) { line = word; continue; }
+        let fragment = '';
+        for (const character of Array.from(word)) {
+          if (fragment && context.measureText(fragment + character).width > width) { lines.push(fragment); fragment = character; }
+          else fragment += character;
+        }
+        line = fragment;
+      }
+      if (line) lines.push(line);
+    }
+    return lines;
+  }
+
+  function block(context, text, width, size, options = {}) {
+    const family = options.family || sans;
+    const weight = options.weight || '400';
+    const leading = options.leading || 1.3;
+    textFont(context, size, family, weight);
+    const lines = linesFor(context, text, width);
+    return { text, width, size, family, weight, leading, lines, height: lines.length * size * leading, color: options.color || '#182F2A' };
+  }
+
+  function paintText(context, value, x, y) {
+    textFont(context, value.size, value.family, value.weight);
+    context.fillStyle = value.color;
+    context.textBaseline = 'top';
+    value.lines.forEach((line, index) => context.fillText(line, x, y + index * value.size * value.leading));
+  }
+
+  function roundRect(context, x, y, width, height, radius, fill) {
+    const r = Math.min(radius, width / 2, height / 2);
+    context.beginPath();
+    context.moveTo(x + r, y);
+    context.arcTo(x + width, y, x + width, y + height, r);
+    context.arcTo(x + width, y + height, x, y + height, r);
+    context.arcTo(x, y + height, x, y, r);
+    context.arcTo(x, y, x + width, y, r);
+    context.closePath();
+    context.fillStyle = fill;
+    context.fill();
+  }
+
+  function readableOn(hex) {
+    const channels = hex.slice(1).match(/.{2}/g).map(value => parseInt(value, 16) / 255).map(value => value <= 0.04045 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4));
+    const luminance = channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722;
+    return luminance > 0.35 ? '#12221D' : '#FFFFFF';
+  }
+
+  async function loadLogo(dataUrl) {
+    if (!dataUrl) return null;
+    if (!/^data:image\/(png|jpeg|jpg);base64,/i.test(dataUrl)) throw new Error('Please upload a PNG or JPG logo.');
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => img.naturalWidth && img.naturalHeight ? resolve(img) : reject(new Error('The logo could not be read. Please upload it again.'));
+      img.onerror = () => reject(new Error('The logo could not be read. Please upload a different PNG or JPG file.'));
+      img.src = dataUrl;
+    });
+  }
+
+  function makeLayout(context, state, width, height, scale, hasLogo) {
+    const square = width === height;
+    const margin = square ? 49 : 59;
+    const verticalInset = height / width > 1.5 ? 140 : 0;
+    const contentWidth = width - margin * 2;
+    const accent = validAccent(state.accent);
+    const bold = state.style === 'bold';
+    const minimal = state.style === 'minimal';
+    const gap = 23 * scale;
+    const brand = block(context, state.storeName || 'Your store', contentWidth - (hasLogo ? 155 : 0), 27 * scale, { weight: '600', leading: 1.18 });
+    const headerHeight = Math.max(brand.height, hasLogo ? 65 : 0) + 36 * scale;
+    const title = block(context, state.eventName || 'Your next event', contentWidth, (minimal ? 92 : bold ? 104 : 110) * scale, { family: bold ? sans : serif, weight: bold ? '800' : '400', leading: 1.04 });
+    const date = dateRange(state);
+    const time = timeRange(state);
+    const dateText = date ? block(context, date, contentWidth - 46 * scale, 28 * scale, { weight: '600', leading: 1.32, color: minimal ? '#182F2A' : readableOn(accent) }) : null;
+    const timeText = time ? block(context, time, contentWidth - 46 * scale, 22 * scale, { weight: '400', color: minimal ? '#182F2A' : readableOn(accent) }) : null;
+    const dateHeight = dateText || timeText ? (dateText ? dateText.height : 0) + (timeText ? timeText.height : 0) + (dateText && timeText ? 7 * scale : 0) + 32 * scale : 0;
+    const sections = [];
+    if (state.offer) sections.push({ kind: 'offer', ...block(context, state.offer, contentWidth, 39 * scale, { weight: '650', leading: 1.15 }) });
+    if (state.details) sections.push({ kind: 'details', ...block(context, state.details, contentWidth, 23 * scale, { leading: 1.35 }) });
+    const venue = [state.location, state.url].filter(Boolean).join('\n');
+    if (venue) sections.push({ kind: 'venue', ...block(context, venue, contentWidth, 21 * scale, { leading: 1.42, weight: '500' }) });
+    const footerText = [participantLabel(state), state.terms].filter(Boolean).join('\n');
+    const footer = footerText ? block(context, footerText, contentWidth, 17 * scale, { leading: 1.4, color: '#485851' }) : null;
+    const bodyHeight = 21 * scale + title.height + 24 * scale + (dateHeight ? dateHeight + gap : 0) + sections.reduce((sum, item) => sum + item.height + gap + (item.kind === 'offer' && !minimal ? 13 * scale : 0), 0);
+    const footerHeight = footer ? footer.height + 25 * scale : 0;
+    const totalHeight = margin + headerHeight + bodyHeight + footerHeight + margin + verticalInset * 2;
+    return { width, height, scale, margin, verticalInset, contentWidth, accent, bold, minimal, gap, brand, headerHeight, title, dateText, timeText, dateHeight, sections, footer, footerHeight, totalHeight };
+  }
+
+  async function renderCanvas(input, format = 'poster') {
+    if (!dimensions[format]) throw new Error('Choose poster, square, or story format.');
+    const state = asState(input);
+    const [pixelWidth, pixelHeight] = dimensions[format];
+    const canvas = document.createElement('canvas');
+    canvas.width = pixelWidth;
+    canvas.height = pixelHeight;
+    const context = canvas.getContext('2d');
+    if (!context) throw new Error('Your browser could not create the artwork. Try a current desktop browser.');
+    const width = 850;
+    const height = width * pixelHeight / pixelWidth;
+    context.scale(pixelWidth / width, pixelWidth / width);
+    const logo = await loadLogo(state.logoDataUrl);
+    let scale = format === 'story' ? 1.12 : 1;
+    let layout = makeLayout(context, state, width, height, scale, Boolean(logo));
+    for (let attempt = 0; layout.totalHeight > height && attempt < 80; attempt++) {
+      scale *= 0.96;
+      layout = makeLayout(context, state, width, height, scale, Boolean(logo));
+    }
+    if (layout.totalHeight > height) throw new Error('There is too much text for this layout. Shorten the event details and try again.');
+    const { margin, verticalInset, contentWidth, accent, bold, minimal } = layout;
+    const paper = minimal ? '#FFFFFF' : bold ? '#F4EBD8' : '#F8F5ED';
+    context.fillStyle = paper;
+    context.fillRect(0, 0, width, height);
+    context.fillStyle = accent;
+    context.fillRect(0, 0, width, bold ? 20 : 8);
+    if (bold) {
+      context.fillStyle = '#D2B569';
+      context.fillRect(width - margin - 74, height - 19, 74, 7);
+    }
+    let y = margin + verticalInset;
+    const headerContentHeight = layout.headerHeight - 36 * scale;
+    paintText(context, layout.brand, margin, y + Math.max(0, (headerContentHeight - layout.brand.height) / 2));
+    if (logo) {
+      const boxWidth = 135;
+      const boxHeight = 65;
+      const x = width - margin - boxWidth;
+      roundRect(context, x, y, boxWidth, boxHeight, 5, '#FFFFFF');
+      const ratio = Math.min((boxWidth - 18) / logo.naturalWidth, (boxHeight - 14) / logo.naturalHeight);
+      const logoWidth = logo.naturalWidth * ratio;
+      const logoHeight = logo.naturalHeight * ratio;
+      context.drawImage(logo, x + (boxWidth - logoWidth) / 2, y + (boxHeight - logoHeight) / 2, logoWidth, logoHeight);
+    }
+    y += layout.headerHeight - 12 * scale;
+    context.strokeStyle = '#D8D8CC';
+    context.lineWidth = 1;
+    context.beginPath();
+    context.moveTo(margin, y);
+    context.lineTo(width - margin, y);
+    context.stroke();
+    y += 33 * scale;
+    const availableSpace = Math.max(0, height - layout.totalHeight);
+    const breathingSpace = Math.min(availableSpace * 0.28, format === 'story' ? 90 : 35);
+    y += breathingSpace;
+    paintText(context, layout.title, margin, y);
+    y += layout.title.height + 24 * scale;
+    if (layout.dateHeight) {
+      if (minimal) {
+        context.fillStyle = accent;
+        context.fillRect(margin, y, 4, layout.dateHeight);
+      } else roundRect(context, margin, y, contentWidth, layout.dateHeight, bold ? 0 : 8, accent);
+      let dateY = y + 16 * scale;
+      if (layout.dateText) { paintText(context, layout.dateText, margin + 23 * scale, dateY); dateY += layout.dateText.height + 7 * scale; }
+      if (layout.timeText) paintText(context, layout.timeText, margin + 23 * scale, dateY);
+      y += layout.dateHeight + layout.gap;
+    }
+    for (const section of layout.sections) {
+      if (section.kind === 'offer' && !minimal) {
+        context.fillStyle = '#BA964A';
+        context.fillRect(margin, y + 2 * scale, 34 * scale, 3 * scale);
+        y += 13 * scale;
+      }
+      paintText(context, section, margin, y);
+      y += section.height + layout.gap;
+    }
+    if (layout.footer) {
+      const footerY = Math.max(y, height - margin - verticalInset - layout.footer.height);
+      context.strokeStyle = '#D8D8CC';
+      context.beginPath();
+      context.moveTo(margin, footerY - 16 * scale);
+      context.lineTo(width - margin, footerY - 16 * scale);
+      context.stroke();
+      paintText(context, layout.footer, margin, footerY);
+    }
+    return canvas;
+  }
+
+  function canvasBlob(canvas, type, quality) {
+    return new Promise((resolve, reject) => canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('The artwork could not be exported. Try again.')), type, quality));
+  }
+
+  async function png(state, format = 'poster') {
+    return canvasBlob(await renderCanvas(state, format), 'image/png');
+  }
+
+  // One full-page image at exactly 612 × 792 points (US Letter).
+  async function pdf(state) {
+    const canvas = await renderCanvas(state, 'poster');
+    const jpeg = new Uint8Array(await (await canvasBlob(canvas, 'image/jpeg', 0.95)).arrayBuffer());
+    const chunks = [];
+    const offsets = [0];
+    let length = 0;
+    const append = data => { const bytes = typeof data === 'string' ? encoder.encode(data) : data; chunks.push(bytes); length += bytes.length; };
+    const object = (id, body) => { offsets[id] = length; append(`${id} 0 obj\n${body}\nendobj\n`); };
+    append('%PDF-1.4\n% Local Event Kit\n');
+    object(1, '<< /Type /Catalog /Pages 2 0 R >>');
+    object(2, '<< /Type /Pages /Kids [3 0 R] /Count 1 >>');
+    object(3, '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>');
+    offsets[4] = length;
+    append(`4 0 obj\n<< /Type /XObject /Subtype /Image /Width ${canvas.width} /Height ${canvas.height} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${jpeg.length} >>\nstream\n`);
+    append(jpeg);
+    append('\nendstream\nendobj\n');
+    const commands = 'q\n612 0 0 792 0 0 cm\n/Im0 Do\nQ\n';
+    object(5, `<< /Length ${encoder.encode(commands).length} >>\nstream\n${commands}endstream`);
+    const xref = length;
+    append('xref\n0 6\n0000000000 65535 f \n');
+    for (let id = 1; id <= 5; id++) append(`${String(offsets[id]).padStart(10, '0')} 00000 n \n`);
+    append(`trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n${xref}\n%%EOF\n`);
+    return new Blob(chunks, { type: 'application/pdf' });
+  }
+
+  const crcTable = new Uint32Array(256);
+  for (let index = 0; index < 256; index++) {
+    let code = index;
+    for (let bit = 0; bit < 8; bit++) code = code & 1 ? 0xEDB88320 ^ (code >>> 1) : code >>> 1;
+    crcTable[index] = code >>> 0;
+  }
+  function crc32(bytes) {
+    let crc = 0xFFFFFFFF;
+    for (let index = 0; index < bytes.length; index++) crc = crcTable[(crc ^ bytes[index]) & 0xFF] ^ (crc >>> 8);
+    return (crc ^ 0xFFFFFFFF) >>> 0;
+  }
+  function header(size) {
+    const bytes = new Uint8Array(size);
+    const view = new DataView(bytes.buffer);
+    return { bytes, u16: (offset, value) => view.setUint16(offset, value, true), u32: (offset, value) => view.setUint32(offset, value, true) };
+  }
+
+  // files: [{ name: 'folder/file.ext', blob: Blob }] or [{ name, data: string|Uint8Array }]
+  async function zip(files) {
+    if (!Array.isArray(files) || !files.length) throw new Error('Add at least one file to the kit.');
+    if (files.length > 65535) throw new Error('Too many files in this download.');
+    const localChunks = [];
+    const centralChunks = [];
+    let offset = 0;
+    let centralSize = 0;
+    const now = new Date();
+    const dosTime = (now.getHours() << 11) | (now.getMinutes() << 5) | (now.getSeconds() >> 1);
+    const dosDate = ((Math.max(1980, Math.min(2107, now.getFullYear())) - 1980) << 9) | ((now.getMonth() + 1) << 5) | now.getDate();
+    for (const file of files) {
+      const nameText = clean(file.name).replace(/\\/g, '/');
+      if (!nameText || nameText.startsWith('/') || nameText.split('/').includes('..')) throw new Error('A kit file has an invalid name.');
+      const name = encoder.encode(nameText);
+      if (name.length > 65535) throw new Error('A kit filename is too long.');
+      const data = file.blob instanceof Blob ? new Uint8Array(await file.blob.arrayBuffer()) : file.data instanceof Uint8Array ? file.data : encoder.encode(file.data == null ? '' : String(file.data));
+      const crc = crc32(data);
+      const local = header(30);
+      local.u32(0, 0x04034B50); local.u16(4, 20); local.u16(6, 0x0800); local.u16(8, 0);
+      local.u16(10, dosTime); local.u16(12, dosDate); local.u32(14, crc); local.u32(18, data.length); local.u32(22, data.length); local.u16(26, name.length);
+      localChunks.push(local.bytes, name, data);
+      const central = header(46);
+      central.u32(0, 0x02014B50); central.u16(4, 20); central.u16(6, 20); central.u16(8, 0x0800); central.u16(10, 0);
+      central.u16(12, dosTime); central.u16(14, dosDate); central.u32(16, crc); central.u32(20, data.length); central.u32(24, data.length); central.u16(28, name.length); central.u32(42, offset);
+      centralChunks.push(central.bytes, name);
+      offset += 30 + name.length + data.length;
+      centralSize += 46 + name.length;
+    }
+    const end = header(22);
+    end.u32(0, 0x06054B50); end.u16(8, files.length); end.u16(10, files.length); end.u32(12, centralSize); end.u32(16, offset);
+    return new Blob([...localChunks, ...centralChunks, end.bytes], { type: 'application/zip' });
+  }
+
+  function copy(input) {
+    const state = asState(input);
+    const name = state.eventName || 'Store event';
+    const business = state.storeName || 'Our store';
+    const date = dateLabel(state);
+    const participants = ['vendor', 'mixed'].includes(state.businessType) ? clean(state.participants) : '';
+    const scopeTitle = 'Participating booths';
+    const summary = [date, state.location].filter(Boolean).join('\n');
+    const terms = state.terms ? `Event terms: ${state.terms}` : '';
+    const participating = participants ? `${scopeTitle}:\n${participants}` : '';
+    const social = [`${name}\n${business}`, summary, state.offer, state.details, participating, terms, state.url].filter(Boolean).join('\n\n');
+    const email = [`Subject: ${name}`, `${name}\n${business}`, summary, state.offer, state.details, participating, terms, state.url ? `Event information: ${state.url}` : '', `We hope to see you there.\n${business}`].filter(Boolean).join('\n\n');
+    const steps = [
+      '[ ] Confirm the date, time, location, and public event details.',
+      '[ ] Review the flyer and social graphics before sharing them.',
+      '[ ] Make sure staff know who to contact with questions.'
+    ];
+    if (state.offer || state.terms) steps.push('[ ] Review the stated offers, exclusions, and terms with the checkout team.');
+    if (state.businessType === 'vendor') steps.push('[ ] Confirm each participating booth and its approved offer.', '[ ] Share the final participating booth list with staff and vendors.');
+    else if (state.businessType === 'consignment') steps.push('[ ] Confirm eligible merchandise and any required consignor approvals.');
+    else if (state.businessType === 'mixed') steps.push('[ ] Confirm which store-owned items, consigned items, and booths participate.');
+    else steps.push('[ ] Confirm the participating merchandise or departments.');
+    if (state.offer) steps.push('[ ] Confirm that checkout staff can apply the approved offer correctly.');
+    steps.push('[ ] Display the event signs and prepare the store.', '[ ] Remove dated signs and announcements after the event.');
+    const staff = [`${name.toUpperCase()}\n${business}`, summary, state.offer ? `APPROVED OFFER\n${state.offer}` : '', state.details ? `EVENT DETAILS\n${state.details}` : '', participating, state.terms ? `TERMS AND EXCLUSIONS\n${state.terms}` : '', state.url ? `EVENT LINK\n${state.url}` : '', `STAFF PREPARATION\n${steps.join('\n')}`, 'Team contact: __________________________\nAssigned to: __________________________\nCompleted on: _________________________'].filter(Boolean).join('\n\n');
+    return { social, email, staff };
+  }
+
+  function staffHtml(input, staffText) {
+    const state = asState(input);
+    const text = staffText == null ? copy(state).staff : String(staffText);
+    return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${escapeHtml(state.storeName || 'Store')} | Event staff guide</title><style>*{box-sizing:border-box}body{margin:0;background:#f0f1ec;color:#18322b;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.sheet{max-width:850px;margin:36px auto;background:white;padding:54px 60px;border-top:8px solid ${validAccent(state.accent)}}.kicker{font-size:12px;font-weight:700;letter-spacing:2px;color:#597168;margin:0 0 12px}h1{font-family:Georgia,serif;font-size:32px;line-height:1.2;margin:0 0 28px}.content{white-space:pre-wrap;overflow-wrap:anywhere}button{display:block;margin:24px auto;padding:12px 20px;border:0;border-radius:7px;background:#174c40;color:white;font:inherit;cursor:pointer}@page{size:letter;margin:0.55in}@media print{body{background:white}.sheet{border:0;padding:0;margin:0;max-width:none}button{display:none}}@media(max-width:600px){.sheet{padding:28px 22px;margin:16px}}</style></head><body><button onclick="window.print()">Print or save as PDF</button><main class="sheet"><p class="kicker">EVENT STAFF GUIDE</p><h1>${escapeHtml(state.storeName || 'Your store')}</h1><div class="content">${escapeHtml(text)}</div></main></body></html>`;
+  }
+
+  window.KitEngine = Object.freeze({ renderCanvas, png, pdf, zip, copy, staffHtml, dateLabel });
+})();
+</script><script>(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const KEY = 'simpleconsign-event-kit-preview-v1';
+  const limits = {storeName:60,eventName:64,eventDate:10,endDate:10,startTime:5,endTime:5,location:120,url:140,offer:100,details:240,terms:220,participants:500};
+  const defaults = {businessType:'vendor',storeName:'Juniper Market',eventName:'The autumn market',eventDate:'2026-10-24',endDate:'',startTime:'10:00',endTime:'17:00',location:'125 Market Street, Your Town',url:'https://junipermarket.example',offer:'20% off selected finds',details:'Discover vintage pieces, one-of-a-kind homewares, and fresh arrivals throughout the store.',terms:'Selected items at participating booths only. Firm-priced items excluded. Offers cannot be combined.',participants:'Booth 12: homewares\nBooth 28: vintage clothing\nBooth 41: furniture',accent:'#214f42',style:'editorial',logoDataUrl:''};
+  const sampleTerms={vendor:defaults.terms,consignment:'Selected merchandise only, subject to approved consignor terms. Firm-priced items excluded. Offers cannot be combined.',resale:'Selected merchandise only. Marked exclusions apply. Offers cannot be combined.',mixed:'Selected merchandise and participating booths only. Firm-priced items excluded. Offers cannot be combined.'};
+  let state={...defaults}, texts=null, customCopy=false, staleCopy=false, tab='poster', previewURL='', timer, toastTimer, revision=0, exportBusy=false;
+  const dims={poster:'US Letter · 8.5 × 11 in · 300 dpi',square:'Square social post · 1080 × 1080 px',story:'Vertical story · 1080 × 1920 px'};
+  const names={poster:'flyer',square:'social-post',story:'story'};
+  const project=()=>({format:'simpleconsign-event-kit',version:1,state:{...state},copy:{...texts},customCopy,staleCopy});
+  const toast = message => { $('toast').textContent=message;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,5500); };
+  function cleanState(input){
+    if(!input||typeof input!=='object') throw new Error('This project has no event details.');
+    const out={...defaults};
+    for(const [key,max] of Object.entries(limits)) { if(typeof input[key]!=='string') throw new Error('This project is missing a field: '+key);out[key]=input[key].slice(0,max); }
+    if(!['vendor','consignment','resale','mixed'].includes(input.businessType)) throw new Error('Choose a supported store type.');out.businessType=input.businessType;
+    out.accent=/^#[\da-f]{6}$/i.test(input.accent)?input.accent:defaults.accent;
+    out.style=['editorial','bold','minimal'].includes(input.style)?input.style:'editorial';
+    out.logoDataUrl='';
+    if(input.logoDataUrl){if(typeof input.logoDataUrl!=='string'||!/^data:image\/(png|jpeg);base64,[A-Za-z0-9+/=]+$/.test(input.logoDataUrl)||input.logoDataUrl.length>=2500000)throw new Error('The saved logo is invalid or too large. Please use a project saved by this preview.');out.logoDataUrl=input.logoDataUrl;}
+    return out;
+  }
+  function save(){
+    try{localStorage.setItem(KEY,JSON.stringify(project()));$('saveStatus').textContent='Saved in this browser';}
+    catch{ $('saveStatus').textContent='Use Save project for a backup'; }
+  }
+  function setTextFields(){for(const key of ['social','email','staff']) $(key+'Copy').value=texts[key];$('copyStale').hidden=!staleCopy;}
+  function syncForm(){
+    for(const key of [...Object.keys(limits),'businessType','accent']) $(key).value=state[key];
+    $('colorLabel').textContent=state.accent.toUpperCase();
+    document.querySelectorAll('[data-style]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.style===state.style));
+    document.querySelectorAll('[data-color]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.color===state.accent));
+    $('participantsGroup').hidden=!['vendor','mixed'].includes(state.businessType);
+    const hints={vendor:'Use only offers approved by participating vendors.',consignment:'Use your existing consignor agreements and approved discount rules.',resale:'Include excluded merchandise and any limits on the offer.',mixed:'State which booths or inventory types are included and who has approved the offer.'};
+    $('termsHint').textContent=hints[state.businessType];
+    $('logoPreview').replaceChildren();
+    if(state.logoDataUrl){const image=new Image();image.src=state.logoDataUrl;image.alt='';$('logoPreview').append(image);}else{$('logoPreview').textContent=state.storeName.split(/\s+/).slice(0,2).map(s=>s[0]||'').join('').toUpperCase();}
+    $('removeLogo').hidden=!state.logoDataUrl;
+  }
+  function change(key,value){
+    if(key==='businessType'&&Object.values(sampleTerms).includes(state.terms)){state.terms=sampleTerms[value];$('terms').value=state.terms;}
+    state[key]=value;
+    // Branding does not affect the plain-text copy.
+    if(!['accent','style','logoDataUrl'].includes(key)){
+      if(customCopy) staleCopy=true;
+      else texts=KitEngine.copy(state);
+    }
+    syncHints();setTextFields();save();schedulePreview();
+  }
+  function syncHints(){
+    $('participantsGroup').hidden=!['vendor','mixed'].includes(state.businessType);
+    const hints={vendor:'Use only offers approved by participating vendors.',consignment:'Use your existing consignor agreements and approved discount rules.',resale:'Include excluded merchandise and any limits on the offer.',mixed:'State which booths or inventory types are included and who has approved the offer.'};
+    $('termsHint').textContent=hints[state.businessType];$('colorLabel').textContent=state.accent.toUpperCase();
+    document.querySelectorAll('[data-color]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.color===state.accent));
+  }
+  function schedulePreview(){clearTimeout(timer);timer=setTimeout(render,180);}
+  async function render(){
+    if(tab==='copy')return;
+    const mine=++revision;
+    try{const blob=await KitEngine.png({...state},tab);if(mine!==revision)return;const next=URL.createObjectURL(blob);$('assetPreview').src=next;if(previewURL)URL.revokeObjectURL(previewURL);previewURL=next;$('previewPlaceholder').hidden=true;}
+    catch(error){if(mine!==revision)return;$('previewPlaceholder').textContent='Preview could not be created. Check your details or remove the logo.';$('previewPlaceholder').hidden=false;console.error(error);}
+  }
+  function switchTab(next){
+    tab=next;revision++;
+    document.querySelectorAll('[data-tab]').forEach(b=>{b.setAttribute('aria-selected',b.dataset.tab===tab);b.tabIndex=b.dataset.tab===tab?0:-1;});
+    $('graphicPanel').hidden=tab==='copy';$('copyPanel').hidden=tab!=='copy';
+    if(tab!=='copy'){$('graphicPanel').setAttribute('aria-labelledby','tab-'+tab);$('assetDimensions').textContent=dims[tab];$('downloadAsset').textContent=tab==='poster'?'Download flyer PDF ↓':'Download PNG ↓';render();}
+  }
+  function validate(){
+    const form=$('eventForm');
+    $('endDate').setCustomValidity('');$('endTime').setCustomValidity('');$('url').setCustomValidity('');
+    for(const id of ['storeName','eventName','location'])$(id).setCustomValidity(state[id].trim()?'':'Please enter '+({storeName:'your store name',eventName:'the event name',location:'the event address'}[id])+'.');
+    if(state.endDate&&state.endDate<state.eventDate)$('endDate').setCustomValidity('Choose an end date on or after the start date.');
+    if(state.startTime&&state.endTime&&state.endTime<=state.startTime)$('endTime').setCustomValidity('Closing time must be after opening time. Overnight events are not supported in this preview.');
+    if(state.url){try{const url=new URL(state.url);if(!['https:','http:'].includes(url.protocol)||!url.hostname)throw new Error();}catch{$('url').setCustomValidity('Use a full website link starting with https:// or http://.');}}
+    if(!form.checkValidity()){for(const input of form.elements){if(input.willValidate&&!input.validity.valid){input.closest('details').open=true;input.reportValidity();input.focus();break;}}return false;}
+    if(staleCopy){switchTab('copy');toast('Review your edited copy before downloading.');return false;}
+    return true;
+  }
+  function download(blob,name){const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
+  function slug(){return (state.storeName+'-'+state.eventName).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,85)||'event-kit';}
+  async function fullKit(){
+    if(exportBusy||!validate())return;exportBusy=true;const button=$('downloadKit');button.disabled=true;button.textContent='Creating your files…';
+    const snapshot={...state},copySnapshot={...texts},projectSnapshot=project(),filePrefix=slug();
+    try{
+      const [pdf,poster,square,story]=await Promise.all([KitEngine.pdf(snapshot),KitEngine.png(snapshot,'poster'),KitEngine.png(snapshot,'square'),KitEngine.png(snapshot,'story')]);
+      const files=[{name:'print/event-flyer.pdf',blob:pdf},{name:'print/event-flyer.png',blob:poster},{name:'social/social-post-1080.png',blob:square},{name:'social/story-1080x1920.png',blob:story},{name:'copy/social-caption.txt',data:copySnapshot.social},{name:'copy/email-announcement.txt',data:copySnapshot.email},{name:'team/team-checklist.txt',data:copySnapshot.staff},{name:'team/team-checklist.html',data:KitEngine.staffHtml(snapshot,copySnapshot.staff)},{name:'project/event-project.json',data:JSON.stringify(projectSnapshot,null,2)},{name:'READ-ME.txt',data:readme(snapshot)}];
+      const zip=await KitEngine.zip(files);download(zip,filePrefix+'-kit.zip');toast('Your ZIP download is ready. Unzip it to see the assets.');
+    }catch(error){console.error(error);toast('The kit could not be created. Please try again or download an individual asset.');}
+    finally{exportBusy=false;button.disabled=false;button.innerHTML='Download full kit <span aria-hidden="true">↓</span>';}
+  }
+  function readme(s){return `SALE & EVENT KIT\n${s.storeName}\n${s.eventName}\n\nCONTENTS\nprint/event-flyer.pdf: US Letter, 8.5 x 11 inches, 300 dpi raster artwork.\nprint/event-flyer.png: 2550 x 3300 pixels.\nsocial/social-post-1080.png: 1080 x 1080 pixels.\nsocial/story-1080x1920.png: 1080 x 1920 pixels.\ncopy/: Editable social and email announcements as plain text.\nteam/: Plain text checklist and printable HTML guide.\nproject/event-project.json: Reopen in the Sale & Event Kit builder to make changes.\n\nPRINTING\nOpen the PDF and print on US Letter at actual size. Ordinary office printing only; no bleed or CMYK settings are included. Open team-checklist.html in a browser and use Print or Save as PDF.\n\nREVIEW BEFORE SHARING\nCheck dates, local hours, address, permissions, offers, and exclusions. Check the social images at full size. PNGs and the flyer PDF are flattened artwork; update your project and export again to change them. The text in the PDF is rendered as an image.\n\nABOUT THIS PREVIEW\nFiles were created locally in your browser with designed layouts and writing templates. No Canva, Adobe, AI service, CRM, or email sending service was used. No content has been posted or sent.\n`;}
+  async function loadLogo(file){
+    if(!file)return;if(!['image/png','image/jpeg','image/webp'].includes(file.type))throw new Error('Choose a PNG, JPG, or WebP image.');if(file.size>5*1024*1024)throw new Error('Choose an image smaller than 5 MB.');
+    const data=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=()=>reject(new Error('That image could not be read.'));reader.readAsDataURL(file);});
+    const image=await new Promise((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error('That image could not be opened.'));img.src=data;});
+    if(image.width*image.height>40000000)throw new Error('Choose a smaller logo image.');
+    let scale=Math.min(1,1000/Math.max(image.width,image.height)),normalized='';const canvas=document.createElement('canvas');
+    for(let attempt=0;attempt<12;attempt++){canvas.width=Math.max(1,Math.round(image.width*scale));canvas.height=Math.max(1,Math.round(image.height*scale));canvas.getContext('2d').drawImage(image,0,0,canvas.width,canvas.height);normalized=canvas.toDataURL('image/png');if(normalized.length<2400000)break;scale*=.8;}
+    if(normalized.length>=2400000)throw new Error('Choose a smaller logo image.');
+    change('logoDataUrl',normalized);syncForm();toast('Logo added to your kit.');
+  }
+  for(const input of $('eventForm').elements){if(!input.name)continue;input.addEventListener('input',()=>{input.setCustomValidity?.('');change(input.name,input.value);if(input.name==='storeName'&&!state.logoDataUrl)$('logoPreview').textContent=state.storeName.split(/\s+/).slice(0,2).map(s=>s[0]||'').join('').toUpperCase();});}
+  $('eventForm').addEventListener('submit',event=>event.preventDefault());
+  $('logoFile').addEventListener('change',async event=>{try{await loadLogo(event.target.files[0]);}catch(error){toast(error.message);}finally{event.target.value='';}});
+  $('removeLogo').addEventListener('click',()=>{change('logoDataUrl','');syncForm();});
+  document.querySelectorAll('[data-style]').forEach(button=>button.addEventListener('click',()=>{change('style',button.dataset.style);syncForm();}));
+  document.querySelectorAll('[data-color]').forEach(button=>button.addEventListener('click',()=>{change('accent',button.dataset.color);syncForm();}));
+  document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>switchTab(button.dataset.tab)));
+  document.querySelector('.asset-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const tabs=['poster','square','story','copy'];let i=tabs.indexOf(tab);i=event.key==='Home'?0:event.key==='End'?3:(i+(event.key==='ArrowRight'?1:-1)+4)%4;switchTab(tabs[i]);$('tab-'+tabs[i]).focus();});
+  for(const key of ['social','email','staff']) $(key+'Copy').addEventListener('input',event=>{texts[key]=event.target.value;customCopy=true;save();});
+  $('refreshCopy').addEventListener('click',()=>{if(!confirm('Replace your edited announcements and checklist with updated event details?'))return;texts=KitEngine.copy(state);customCopy=false;staleCopy=false;setTextFields();save();toast('Copy updated from your event details.');});
+  $('keepCopy').addEventListener('click',()=>{staleCopy=false;setTextFields();save();toast('Your edited copy will be included.');});
+  document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{const key=button.dataset.copy;try{await navigator.clipboard.writeText(texts[key]);toast('Copied to your clipboard.');}catch{$(key+'Copy').focus();$(key+'Copy').select();toast('Text selected. Use your usual copy shortcut.');}}));
+  $('downloadKit').addEventListener('click',fullKit);
+  $('downloadAsset').addEventListener('click',async()=>{if(!validate())return;const format=tab;const snapshot={...state};const button=$('downloadAsset');button.disabled=true;try{const blob=format==='poster'?await KitEngine.pdf(snapshot):await KitEngine.png(snapshot,format);download(blob,slug()+'-'+names[format]+(format==='poster'?'.pdf':'.png'));toast('Your asset download is ready.');}catch(error){console.error(error);toast('Could not create that asset. Please try again.');}finally{button.disabled=false;}});
+  $('saveProject').addEventListener('click',()=>{download(new Blob([JSON.stringify(project(),null,2)],{type:'application/json'}),slug()+'-project.json');toast('Project saved. Open this file here to continue later.');});
+  $('projectFile').addEventListener('change',async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>4000000)throw new Error('This project file is too large.');const value=JSON.parse(await file.text());if(value.format!=='simpleconsign-event-kit'||value.version!==1)throw new Error('Choose a project saved by this tool.');const next=cleanState(value.state);if(!confirm('Open this project and replace the current event?'))return;state=next;texts=KitEngine.copy(state);for(const key of ['social','email','staff'])if(typeof value.copy?.[key]==='string')texts[key]=value.copy[key].slice(0,30000);customCopy=!!value.customCopy;staleCopy=!!value.staleCopy;syncForm();setTextFields();save();render();toast('Project opened.');}catch(error){toast(error instanceof SyntaxError?'That file is not a valid project.':error.message);}finally{event.target.value='';}});
+  document.querySelector('.file-label').addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();$('projectFile').click();}});
+  $('sampleButton').addEventListener('click',()=>{if(!confirm('Replace the current event with the fictional Juniper Market sample? Save your project first if you want to keep it.'))return;state={...defaults};texts=KitEngine.copy(state);customCopy=false;staleCopy=false;syncForm();setTextFields();save();render();toast('Sample event loaded.');});
+  $('howButton').addEventListener('click',()=>$('howDialog').showModal());$('closeHow').addEventListener('click',()=>$('howDialog').close());$('howDialog').addEventListener('click',event=>{if(event.target===$('howDialog')){const rect=event.target.getBoundingClientRect();if(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom)event.target.close();}});
+  try{const saved=JSON.parse(localStorage.getItem(KEY));if(saved?.version===1&&saved?.format==='simpleconsign-event-kit'){state=cleanState(saved.state);texts=KitEngine.copy(state);for(const key of ['social','email','staff'])if(typeof saved.copy?.[key]==='string')texts[key]=saved.copy[key].slice(0,30000);customCopy=!!saved.customCopy;staleCopy=!!saved.staleCopy;$('saveStatus').textContent='Restored from this browser';}}catch{$('saveStatus').textContent='Sample event';}
+  texts=texts||KitEngine.copy(state);syncForm();setTextFields();switchTab('poster');
+})();
+</script>
+</body></html>
